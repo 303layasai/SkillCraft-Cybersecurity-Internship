@@ -1,0 +1,126 @@
+"""
+SkillCraft Technology - Cybersecurity Internship
+Safe Task (Alternative to keylogger): Typing Session Logger
+Author: Laya Sai
+
+Description:
+This program records keystrokes ONLY while the user starts the session and the program window is focused.
+It is intended for testing/learning on your own machine with your explicit consent.
+It does NOT run in background nor does it capture global/system keystrokes from other apps.
+"""
+
+import sys
+import time
+
+# Choose the appropriate getch implementation for platform
+if sys.platform.startswith("win"):
+    import msvcrt
+
+    def get_char():
+        ch = msvcrt.getwch()  # returns a Python str
+        # handle special keys (arrows, function keys) which come as '\x00' or '\xe0' followed by another
+        if ch in ("\x00", "\xe0"):
+            # read the next code and return a readable label
+            nxt = msvcrt.getwch()
+            return f"<SPECIAL:{ord(nxt)}>"
+        return ch
+
+else:
+    # Unix-like systems
+    import tty
+    import termios
+
+    def get_char():
+        fd = sys.stdin.fileno()
+        old_settings = termios.tcgetattr(fd)
+        try:
+            tty.setraw(fd)
+            ch = sys.stdin.read(1)
+            # On Unix terminals special keys often produce escape sequences starting with '\x1b'
+            if ch == "\x1b":
+                # read remaining bytes (non-blocking for a short time)
+                # to capture arrow or function keys in simplest form:
+                import select
+                seq = ch
+                time_start = time.time()
+                while True:
+                    r, _, _ = select.select([sys.stdin], [], [], 0.01)
+                    if r:
+                        seq += sys.stdin.read(1)
+                    else:
+                        break
+                    # avoid infinite loops
+                    if time.time() - time_start > 0.05:
+                        break
+                return f"<ESC_SEQ:{seq.encode('utf-8')}>"
+            return ch
+        finally:
+            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+
+
+def human_readable(ch):
+    # Make control characters readable in the log
+    if ch == "\r" or ch == "\n":
+        return "<ENTER>"
+    if ch == "\t":
+        return "<TAB>"
+    if ch == "\x08" or ch == "\x7f":
+        return "<BACKSPACE>"
+    if ch == "\x1b":
+        return "<ESC>"
+    if ch == " ":
+        return "<SPACE>"
+    # If we produced a special label already (like <...>), keep it
+    if isinstance(ch, str) and ch.startswith("<") and ch.endswith(">"):
+        return ch
+    # printable
+    if ch.isprintable():
+        return ch
+    return f"<U+{ord(ch):04X}>"
+
+
+def main():
+    print("=== Typing Session Logger (Safe) ===")
+    print("Author: Laya Sai\n")
+    print("This program will record keys you press while this window is focused.")
+    print("Logs will be saved to: typing_log.txt")
+    print("Instructions:")
+    print(" - Press ENTER to start logging.")
+    print(" - Press ESC twice quickly or Ctrl+C to stop logging and exit.\n")
+
+    input("Press ENTER when you are ready to start...")
+
+    logfile = "typing_log.txt"
+    print("\nLogging started. Type in this terminal window.")
+    print("Press ESC twice quickly or Ctrl+C to stop.\n")
+
+    # open file for append
+    with open(logfile, "a", encoding="utf-8") as f:
+        f.write("\n--- New session: {} ---\n".format(time.strftime("%Y-%m-%d %H:%M:%S")))
+        esc_count = 0
+        try:
+            while True:
+                ch = get_char()
+                readable = human_readable(ch)
+                timestamp = time.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+                f.write(f"{timestamp} {readable}\n")
+                f.flush()
+                # simple stop condition: ESC pressed twice quickly
+                if ch == "\x1b":
+                    esc_count += 1
+                else:
+                    esc_count = 0
+                if esc_count >= 2:
+                    print("\nESC pressed twice — stopping logger.")
+                    break
+        except KeyboardInterrupt:
+            print("\nInterrupted by user (Ctrl+C). Stopping logger.")
+        finally:
+            f.write("--- Session ended: {} ---\n".format(time.strftime("%Y-%m-%d %H:%M:%S")))
+            f.flush()
+
+    print(f"Log saved to {logfile}. You can open it to view the recorded keystrokes.")
+
+
+if _name_ == "_main_":
+    main()
