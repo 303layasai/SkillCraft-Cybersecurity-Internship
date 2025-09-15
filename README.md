@@ -35,7 +35,7 @@ This repository showcases the tasks I completed during my SkillCraft Technology 
 
 .🏢 Company: SkillCraft Technology
 
-.📅 Duration: [Add your duration]
+.📅 Duration: [sep:1 to oct:1]
 
 .📌 Description: Hands-on tasks involving encryption, secure password handling, and basic ethical hacking using Python.
 
