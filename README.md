@@ -1,6 +1,6 @@
 # 🛡️ Title:
 
-SkillCraft Technology Internship – Cybersecurity Projects:
+# SkillCraft Technology Internship – Cybersecurity Projects:
 
 This repository showcases the tasks I completed during my SkillCraft Technology Internship in the field of cybersecurity. The projects focus on cryptography, password security, and ethical hacking fundamentals.
 ---
