@@ -67,10 +67,10 @@ File: task1_encryption.py
 
 ## **Sample Output:**
 
-### *Enter message: Hello Laya*
-## *Enter shift: 3*
-## *Encrypted: Khoor Od|d*
-## *Decrypted: Hello Laya*
+#### *Enter message: Hello Laya*
+#### *Enter shift: 3*
+#### *Encrypted: Khoor Od|d*
+#### *Decrypted: Hello Laya*
 ---
 
 # 🖼️ Task 2 – Image Encryption:
@@ -85,9 +85,9 @@ File: task2_image_encryption.py
 
 **Sample Output:**
 
-**# Original image loaded successfully!**
-**# Image encrypted and saved as encrypted.png**
-**# Image decrypted and saved as decrypted.png**
+#### *Original image loaded successfully!*
+#### *Image encrypted and saved as encrypted.png*
+#### *Image decrypted and saved as decrypted.png*
 # 🔑 Task 3 – Password Security:
 
 File: task3_password.py
@@ -100,9 +100,9 @@ File: task3_password.py
 
 **Sample Output:**
 
-**# Enter your password: Laya@123**
-**# Password Strength: Strong**
-**# Encrypted Password: b'cGFzc3dvcmRfZW5jcnlwdGVk'**
+#### *Enter your password: Laya@123*
+#### *Password Strength: Strong*
+#### *Encrypted Password: b'cGFzc3dvcmRfZW5jcnlwdGVk'*
 
 
 # 📋 Task 4 – Password Keylogger:
@@ -117,12 +117,12 @@ File: task4_password_keylogger.py
 
 **Sample Output:**
 
-**# Keylogger started...**
-**# Keystrokes saved in key_log.txt**
+#### *Keylogger started...*
+#### *Keystrokes saved in key_log.txt*
 
-**# Sample key_log.txt file:**
+#### *Sample key_log.txt file:*
 
-**# ['H', 'e', 'l', 'l', 'o', ' ', 'L', 'a', 'y', 'a']**
+#### *['H', 'e', 'l', 'l', 'o', ' ', 'L', 'a', 'y', 'a']*
 
 # 📌 Conclusion:
 
