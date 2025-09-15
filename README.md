@@ -67,10 +67,10 @@ File: task1_encryption.py
 
 ## **Sample Output:**
 
-# Enter message: Hello Laya
-# Enter shift: 3
-# Encrypted: Khoor Od|d
-# Decrypted: Hello Laya
+## Enter message: Hello Laya
+## Enter shift: 3
+## Encrypted: Khoor Od|d
+## Decrypted: Hello Laya
 ---
 
 # 🖼️ Task 2 – Image Encryption:
