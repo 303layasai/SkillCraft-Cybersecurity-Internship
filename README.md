@@ -82,7 +82,7 @@ File: task2_image_encryption.py
 
 .Demonstrates security concepts applied to multimedia.
 
-**Sample Output:**
+# **Sample Output:**
 
 
 
@@ -99,7 +99,7 @@ File: task3_password.py
 
 .Highlights the importance of secure password handling.
 
-**Sample Output:**
+# **Sample Output:**
 
 
 
@@ -116,7 +116,7 @@ File: task4_password_keylogger.py
 
 .Demonstrates how attackers use such tools and why detection is important.
 
-**Sample Output:**
+# **Sample Output:**
 
 
 
