@@ -65,12 +65,12 @@ File: task1_encryption.py
 
 .Focuses on understanding the basics of cryptography.
 
-Sample Output:
+# Sample Output:
 
-Enter message: Hello Laya
+**Enter message: Hello Laya
 Enter shift: 3
 Encrypted: Khoor Od|d
-Decrypted: Hello Laya
+Decrypted: Hello Laya**
 ---
 
 🖼️ Task 2 – Image Encryption:
