@@ -45,17 +45,17 @@ This repository showcases the tasks I completed during my SkillCraft Technology 
 
 .📦 Libraries Used:
 
-.cryptography
+                 .cryptography
 
-.pynput
+                  .pynput
 
-.PIL / OpenCV (if used for image encryption)
+                  .PIL / OpenCV (if used for image encryption)
 
-.os, sys, base64
+                   .os, sys, base64
 
 .
 
-🔐 Task 1 – Encryption:
+# # 🔐 Task 1 – Encryption:
 
 File: task1_encryption.py
 
@@ -67,13 +67,13 @@ File: task1_encryption.py
 
 # Sample Output:
 
-**Enter message: Hello Laya
-Enter shift: 3
-Encrypted: Khoor Od|d
-Decrypted: Hello Laya**
+# Enter message: Hello Laya
+# Enter shift: 3
+# Encrypted: Khoor Od|d
+# Decrypted: Hello Laya
 ---
 
-🖼️ Task 2 – Image Encryption:
+# 🖼️ Task 2 – Image Encryption:
 
 File: task2_image_encryption.py
 
@@ -83,13 +83,13 @@ File: task2_image_encryption.py
 
 .Demonstrates security concepts applied to multimedia.
 
-Sample Output:
+**Sample Output:**
 
-Original image loaded successfully!
-Image encrypted and saved as encrypted.png
-Image decrypted and saved as decrypted.png
+# Original image loaded successfully!
+# Image encrypted and saved as encrypted.png
+# Image decrypted and saved as decrypted.png
 
-🔑 Task 3 – Password Security:
+# 🔑 Task 3 – Password Security:
 
 File: task3_password.py
 
@@ -99,14 +99,14 @@ File: task3_password.py
 
 .Highlights the importance of secure password handling.
 
-Sample Output:
+**Sample Output:**
 
-Enter your password: Laya@123
-Password Strength: Strong
-Encrypted Password: b'cGFzc3dvcmRfZW5jcnlwdGVk'
+# Enter your password: Laya@123
+# Password Strength: Strong
+# Encrypted Password: b'cGFzc3dvcmRfZW5jcnlwdGVk'
 
 
-📋 Task 4 – Password Keylogger:
+# 📋 Task 4 – Password Keylogger:
 
 File: task4_password_keylogger.py
 
@@ -116,14 +116,14 @@ File: task4_password_keylogger.py
 
 .Demonstrates how attackers use such tools and why detection is important.
 
-Sample Output:
+**Sample Output:**
 
-Keylogger started...
-Keystrokes saved in key_log.txt
+# Keylogger started...
+# Keystrokes saved in key_log.txt
 
-Sample key_log.txt file:
+# Sample key_log.txt file:
 
-['H', 'e', 'l', 'l', 'o', ' ', 'L', 'a', 'y', 'a']
+# ['H', 'e', 'l', 'l', 'o', ' ', 'L', 'a', 'y', 'a']
 
 📌 Conclusion:
 
