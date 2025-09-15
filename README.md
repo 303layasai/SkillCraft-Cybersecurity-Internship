@@ -71,6 +71,8 @@ File: task1_encryption.py
 #### *Enter shift: 3*
 #### *Encrypted: Khoor Od|d*
 #### *Decrypted: Hello Laya*
+
+![Task 1 Output](https://github.com/303layasai/SkillCraft-Cybersecurity-Internship/blob/main/outputs/WhatsApp%20Image%202025-09-14%20at%2022.29.12.jpeg)
 ---
 
 # 🖼️ Task 2 – Image Encryption:
