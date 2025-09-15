@@ -1,77 +1,146 @@
-# 🛡️ SCT_CS_3 — Cybersecurity Internship Projects
-
-This repository contains a **collection of projects** completed during the Cyber Security Internship at **SkillCraft Technology**.  
-Projects cover topics like encryption, image processing, password security, and more.
-
+# 🛡️ Title
+SkillCraft Technology Internship – Cybersecurity Projects
+This repository showcases the tasks I completed during my SkillCraft Technology Internship in the field of cybersecurity. The projects focus on cryptography, password security, and ethical hacking fundamentals.
 ---
 
 ## 📚 Table of Contents
+.📑 Table of Contents
 
-1. [Introduction](#introduction)  
-2. [Projects](#projects)  
-3. [Performance & Screenshots](#performance--screenshots)  
-4. [How to Run](#how-to-run)  
-5. [Contributions](#contributions)  
-6. [About Me](#about-me)
+1.About the Internship
+2.Tech Stack
+3.Tasks
+4.🔐 Task 1 – Encryption
+5.🖼️ Task 2 – Image Encryption
+6.🔑 Task 3 – Password Security
+7.📋 Task 4 – Password Keylogger
+8.📷 Sample Outputs
+9.📌 Conclusion
+10.🚀 How to Run
+11.📝 License
 
+# About the Internship
+
+.💼 Internship Domain: Cybersecurity
+
+.🏢 Company: SkillCraft Technology
+
+.📅 Duration: [Add your duration]
+
+.📌 Description: Hands-on tasks involving encryption, secure password handling, and basic ethical hacking using Python.
+
+Tech Stack
+
+.👨‍💻 Language: Python 3.x
+.📦 Libraries Used:
+.cryptography
+.pynput
+.PIL / OpenCV (if used for image encryption)
+.os, sys, base64
+
+.
+
+🔐 Task 1 – Encryption
+
+File: task1_encryption.py
+
+.Implemented a simple text encryption program.
+.Allows users to encrypt and decrypt messages using a key-based algorithm.
+.Focuses on understanding the basics of cryptography.
+
+Sample Output:
+
+Enter message: Hello Laya
+Enter shift: 3
+Encrypted: Khoor Od|d
+Decrypted: Hello Laya
 ---
 
-## 💡 Introduction
+🖼️ Task 2 – Image Encryption
 
-Here you can write a short paragraph about what the internship taught you, technologies you used (Python, libraries, etc.), motivation.
+File: task2_image_encryption.py
 
----
+.Developed an image encryption program.
+.The image pixels are encrypted using a key, making the image unreadable without decryption.
+.Demonstrates security concepts applied to multimedia.
 
-## 📁 Projects
+Sample Output:
 
-### Task 1: Caesar Cipher Encryption & Decryption
+Original image loaded successfully!
+Image encrypted and saved as encrypted.png
+Image decrypted and saved as decrypted.png
 
-**Overview:** A Python script that encrypts/decrypts text using the Caesar cipher with adjustable shift values, including file input/output.
+🔑 Task 3 – Password Security
 
-**Features:**
-- Encrypt and decrypt plain text using a shift key  
-- Supports wrap-around at the end of the alphabet  
-- Read from and write to files  
+File: task3_password.py
 
----
+.Created a program to check and manage passwords.
+.Focuses on password encryption, validation, and strength analysis.
+.Highlights the importance of secure password handling.
 
-### Task 2: Pixel Image Encryption
+Sample Output:
 
-**Overview:** Encrypt and decrypt image files via pixel-level manipulation and mathematical operations.
+Enter your password: Laya@123
+Password Strength: Strong
+Encrypted Password: b'cGFzc3dvcmRfZW5jcnlwdGVk'
 
-**Features:**
-- Swap pixels using pseudo-random sequence  
-- Modify pixel values using key based mathematical transforms  
 
----
+📋 Task 4 – Password Keylogger
 
-### Task 3: Password Complexity Checker
+File: task4_password_keylogger.py
 
-**Overview:** A CLI tool to evaluate password strength based on several criteria.
+.Implemented a basic keylogger program for cybersecurity learning.
+.Logs keystrokes and stores them securely in a file.
+.Demonstrates how attackers use such tools and why detection is important.
 
-**Features:**
-- Checks **length**, **uppercase**, **lowercase**, **number**, **special character**  
-- Classifies password strength: *Weak*, *Good*, *Strong*  
+Sample Output:
 
----
+Keylogger started...
+Keystrokes saved in key_log.txt
 
-## 📸 Performance & Screenshots
+Sample key_log.txt file:
 
-Here you add images to show how your outputs look. Place your screenshot files in a folder like `images/` and reference them:
+['H', 'e', 'l', 'l', 'o', ' ', 'L', 'a', 'y', 'a']
 
-![Example Output 1](images/output1.png)  
-*Output from Task 1*  
+📌 Conclusion:
 
-![Example Output 2](images/output2.png)  
-*Output from Task 2*
+This internship enhanced my practical skills in core cybersecurity concepts using Python. Each task challenged my understanding of secure data handling, ethical hacking, and cryptographic techniques.
 
----
+🚀 How to Run
 
-## 🚀 How to Run
+1. Clone this repository:
+   git clone https://github.com/your-username/skillcraft-internship.git
+cd skillcraft-internship.
+2. Install dependencies (if any):
+   pip install cryptography pynput pillow
+3.Run any task:
+python task1_encryption.py
 
-```bash
-git clone https://github.com/Tech-Anshika/SCT_CS_3.git
-cd SCT_CS_3
-# For each task, go into its folder and run the relevant Python script, e.g.:
-python task1_caesar_cipher.py
+⚠️ Note: For Task 4 (keylogger), administrator privileges may be required on some systems.
+
+📝 License
+
+This project is for educational purposes only.
+© [ Name:G.LayaSAi], [Year:2025]. All rights reserved.
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+
+
+
+
+
+
+
+
 
