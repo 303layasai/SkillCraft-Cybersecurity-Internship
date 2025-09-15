@@ -65,7 +65,7 @@ File: task1_encryption.py
 
 .Focuses on understanding the basics of cryptography.
 
-# **Sample Output:**
+## **Sample Output:**
 
 # Enter message: Hello Laya
 # Enter shift: 3
