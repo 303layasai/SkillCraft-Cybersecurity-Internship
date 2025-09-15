@@ -67,10 +67,7 @@ File: task1_encryption.py
 
 **Sample Output:**
 
-#### *Enter message: Hello Laya*
-#### *Enter shift: 3*
-#### *Encrypted: Khoor Od|d*
-#### *Decrypted: Hello Laya*
+
 
 ![Task 1 Output](https://github.com/303layasai/SkillCraft-Cybersecurity-Internship/blob/main/outputs/task1.jpeg)
 ---
@@ -87,9 +84,7 @@ File: task2_image_encryption.py
 
 **Sample Output:**
 
-#### *Original image loaded successfully!*
-#### *Image encrypted and saved as encrypted.png*
-#### *Image decrypted and saved as decrypted.png*
+
 
 ![Task 1 Output](https://github.com/303layasai/SkillCraft-Cybersecurity-Internship/blob/main/outputs/task2.jpeg)
 
@@ -106,9 +101,7 @@ File: task3_password.py
 
 **Sample Output:**
 
-#### *Enter your password: Laya@123*
-#### *Password Strength: Strong*
-#### *Encrypted Password: b'cGFzc3dvcmRfZW5jcnlwdGVk'*
+
 
 ![Task 1 Output](https://github.com/303layasai/SkillCraft-Cybersecurity-Internship/blob/main/outputs/task3.jpeg)
 
@@ -125,12 +118,7 @@ File: task4_password_keylogger.py
 
 **Sample Output:**
 
-#### *Keylogger started...*
-#### *Keystrokes saved in key_log.txt*
 
-#### *Sample key_log.txt file:*
-
-#### *['H', 'e', 'l', 'l', 'o', ' ', 'L', 'a', 'y', 'a']*
 
 ![Task 1 Output](https://github.com/303layasai/SkillCraft-Cybersecurity-Internship/blob/main/outputs/task4.jpeg)
 
